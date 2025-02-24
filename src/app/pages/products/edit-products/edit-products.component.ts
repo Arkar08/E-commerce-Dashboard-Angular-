@@ -18,11 +18,11 @@ export class EditProductsComponent implements OnInit {
       
   }
 
-  saveBtn(){
+  saveBtn():void{
     this.router.navigate(['/products'])
   }
 
-  cancel(){
+  cancel():void{
     this.router.navigate(['/products'])
   }
 }

@@ -4,14 +4,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog'
+import {MatDialog} from '@angular/material/dialog';
 import { RouterLink } from '@angular/router';
 import { FilterCategoryComponent } from '../../../models/filter-category/filter-category.component';
 import { DeleteCategoryComponent } from '../../../models/delete-category/delete-category.component';
 
 @Component({
   selector: 'app-category',
-  imports: [MatToolbarModule,MatButtonModule,MatIconModule,MatTableModule, MatPaginatorModule,RouterLink,MatDialogModule],
+  imports: [MatToolbarModule,MatButtonModule,MatIconModule,MatTableModule, MatPaginatorModule,RouterLink],
   templateUrl: './category.component.html',
   styleUrl: './category.component.css'
 })
@@ -21,25 +21,25 @@ export class CategoryComponent implements AfterViewInit,OnInit{
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(private dialog:MatDialog){}
+  constructor(public dialog:MatDialog){}
   ngOnInit(): void {
       
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;
   }
 
-  filterDialog(){
+  filterDialog():void{
     this.dialog.open(FilterCategoryComponent,{
       width:'900px',
       data:{}
     })
   }
 
-  delete(){
+  delete():void{
     this.dialog.open(DeleteCategoryComponent,{
-      width:'500px',
+      width:'900px',
       data:{}
     })
   }

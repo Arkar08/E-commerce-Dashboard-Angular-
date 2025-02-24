@@ -1,1 +1,26 @@
-<p>filter-category works!</p>
+<div class="dialog">
+    <mat-toolbar>
+        <h3>Filter</h3>
+    </mat-toolbar>
+    
+    <div class="middleMain">
+        <mat-form-field>
+            <mat-label>Select Date</mat-label>
+            <mat-select>
+                <mat-option value="Hello">Hello</mat-option>
+                <mat-option value="Hi">Hi</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Category Name</mat-label>
+            <mat-select>
+                <mat-option value="Hello">Hello</mat-option>
+                <mat-option value="Hi">Hi</mat-option>
+            </mat-select>
+         </mat-form-field>
+    </div>
+    <div class="buttonGp">
+        <button mat-raised-button class="cancelBtn" (click)="cancelBtn()">Cancel</button>
+        <button mat-raised-button class="saveBtn" (click)="filterBtn()">Filter</button>
+    </div>
+</div>

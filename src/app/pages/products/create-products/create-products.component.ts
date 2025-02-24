@@ -18,11 +18,11 @@ export class CreateProductsComponent implements OnInit {
       
   }
 
-  createBtn(){
+  createBtn():void{
     this.router.navigate(['/products'])
   }
 
-  cancel(){
+  cancel():void{
     this.router.navigate(['/products'])
   }
 

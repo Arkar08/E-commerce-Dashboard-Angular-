@@ -16,11 +16,11 @@ export class CreateCategoryComponent implements OnInit {
       
   }
 
-  createBtn(){
+  createBtn():void{
     this.router.navigate(['/category'])
   }
 
-  cancel(){
+  cancel():void{
     this.router.navigate(['/category'])
   }
 

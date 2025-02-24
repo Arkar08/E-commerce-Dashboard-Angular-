@@ -40,20 +40,20 @@ export class ProductsComponent implements AfterViewInit, OnInit {
   constructor(private dialog: MatDialog) {}
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;
   }
 
-  filterDialog() {
+  filterDialog():void {
     this.dialog.open(FilterProductComponent, {
       width: '900px',
       data: {},
     });
   }
 
-  delete(){
+  delete():void{
     this.dialog.open(DeleteProductComponent,{
-      width:'500px',
+      width:'900px',
       data:{}
     })
   }

@@ -29,11 +29,11 @@ export class OrderComponent implements AfterViewInit, OnInit {
   constructor(private dialog: MatDialog) {}
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;
   }
 
-  filterDialog() {
+  filterDialog():void {
     this.dialog.open(FilterOrderComponent, {
       width: '900px',
       data: {},

@@ -17,11 +17,11 @@ export class EditCategoryComponent implements OnInit {
       
   }
 
-  saveBtn(){
+  saveBtn():void{
     this.router.navigate(['/category'])
   }
 
-  cancel(){
+  cancel():void{
     this.router.navigate(['/category'])
   }
 }

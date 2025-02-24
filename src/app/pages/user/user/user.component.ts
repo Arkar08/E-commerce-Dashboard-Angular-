@@ -29,11 +29,11 @@ export class UserComponent implements OnInit,AfterViewInit {
   constructor(private dialog: MatDialog) {}
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;
   }
 
-   filterDialog() {
+   filterDialog():void {
       this.dialog.open(FilterUserComponent, {
         width: '900px',
         data: {},

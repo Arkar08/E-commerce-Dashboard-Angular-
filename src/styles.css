@@ -103,3 +103,29 @@ mat-form-field{
     cursor: pointer;
     margin-right: 10px;
 }
+.dialog{
+    padding:20px;
+}
+.middleMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+.buttonGp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.yesBtn{
+    width: 100px !important;
+    color: white !important;
+    background-color: green !important;
+    margin-left: 10px !important;
+}
+.noBtn{
+    width: 100px !important;
+    color: white !important;
+    background-color: red !important;
+}
