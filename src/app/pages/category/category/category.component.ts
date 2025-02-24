@@ -8,6 +8,7 @@ import {MatDialog} from '@angular/material/dialog';
 import { RouterLink } from '@angular/router';
 import { FilterCategoryComponent } from '../../../models/filter-category/filter-category.component';
 import { DeleteCategoryComponent } from '../../../models/delete-category/delete-category.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-category',
@@ -21,9 +22,9 @@ export class CategoryComponent implements AfterViewInit,OnInit{
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(public dialog:MatDialog){}
+  constructor(public dialog:MatDialog,private title:Title){}
   ngOnInit(): void {
-      
+      this.title.setTitle("E-Commerce > Category")
   }
 
   ngAfterViewInit():void {

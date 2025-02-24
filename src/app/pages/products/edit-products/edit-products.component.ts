@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-edit-products',
@@ -13,9 +14,9 @@ import { Router } from '@angular/router';
   styleUrl: './edit-products.component.css'
 })
 export class EditProductsComponent implements OnInit {
-  constructor(private router:Router){}
+  constructor(private router:Router,private title:Title){}
   ngOnInit(): void {
-      
+      this.title.setTitle("E-Commerce > Edit-Product")
   }
 
   saveBtn():void{

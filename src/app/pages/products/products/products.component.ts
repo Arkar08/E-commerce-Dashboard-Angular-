@@ -8,6 +8,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { RouterLink } from '@angular/router';
 import { FilterProductComponent } from '../../../models/filter-product/filter-product.component';
 import { DeleteProductComponent } from '../../../models/delete-product/delete-product.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-products',
@@ -37,8 +38,10 @@ export class ProductsComponent implements AfterViewInit, OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(private dialog: MatDialog) {}
-  ngOnInit(): void {}
+  constructor(private dialog: MatDialog,private title:Title) {}
+  ngOnInit(): void {
+    this.title.setTitle("E-Commerce > Products")
+  }
 
   ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;

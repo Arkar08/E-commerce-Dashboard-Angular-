@@ -6,6 +6,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FilterUserComponent } from '../../../models/filter-user/filter-user.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-user',
@@ -26,8 +27,10 @@ export class UserComponent implements OnInit,AfterViewInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(private dialog: MatDialog) {}
-  ngOnInit(): void {}
+  constructor(private dialog: MatDialog,private title:Title) {}
+  ngOnInit(): void {
+    this.title.setTitle("E-Commerce > Users")
+  }
 
   ngAfterViewInit():void {
     this.dataSource.paginator = this.paginator;

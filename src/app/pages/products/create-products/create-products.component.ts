@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-create-products',
@@ -13,9 +14,9 @@ import { Router } from '@angular/router';
   styleUrl: './create-products.component.css'
 })
 export class CreateProductsComponent implements OnInit {
-  constructor(private router:Router){}
+  constructor(private router:Router,private title:Title){}
   ngOnInit(): void {
-      
+      this.title.setTitle("E-Commerce > Create-Product")
   }
 
   createBtn():void{
