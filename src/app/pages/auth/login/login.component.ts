@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { Router } from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +14,9 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
-    constructor(private router:Router){}
+    constructor(private router:Router,private title:Title){}
     ngOnInit(): void {
-        
+        this.title.setTitle("E-commerce")
     }
 
     login(){
