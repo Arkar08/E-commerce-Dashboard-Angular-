@@ -38,6 +38,10 @@ export const routes: Routes = [
                 loadChildren:()=>import('./pages/products/products.module').then(m => m.ProductsModule)
             },
             {
+                path:"advertising",
+                loadChildren:() => import ("./pages/ad/ad.module").then(m => m.AdModule)
+            },
+            {
                 path:'logout',
                 component:LogoutComponent
             }

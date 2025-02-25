@@ -1,0 +1,27 @@
+
+h3{
+    font-size: 24px !important;
+    font-weight: 400;
+    text-align: center;
+    color: blueviolet;
+}
+.fileUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.outputContainer{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(190, 187, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.outputImage{
+    width: 100%;
+    height: 100%;
+}

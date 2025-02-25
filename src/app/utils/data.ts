@@ -6,6 +6,12 @@ export const menuLists = [
         img:"dashboard.png"
     },
     {
+        route:"/advertising",
+        text:"Create Advertising",
+        activeImg:"ad-white.png",
+        img:"ad.png"
+    },
+    {
         route:"/user",
         text:"User",
         activeImg:"user-white.png",

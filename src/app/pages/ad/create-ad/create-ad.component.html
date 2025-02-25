@@ -1,48 +1,26 @@
 <mat-toolbar class="headerCategory">
-    <h3>Products</h3>
+    <h3>Advertising</h3>
     <div class="searchFilter">
-        <div class="inputContainer">
-            <input type="text" placeholder="Search..." class="input">
-        </div>
        <div>
-            <button mat-icon-button class="iconButton" [routerLink]="'./create-product'">
+            <button mat-icon-button class="iconButton" (click)="addDialog()">
                 <mat-icon class="icon">add_circle</mat-icon>
-            </button>
-            <button mat-icon-button class="iconButton" (click)="filterDialog()">
-                <mat-icon class="icon">filter_list</mat-icon>
             </button>
        </div>
     </div>
 </mat-toolbar>
 
 
-
 <div class="mat-elevation-z8 table">
     <table mat-table [dataSource]="dataSource">
 
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+  
       <ng-container matColumnDef="image">
         <th mat-header-cell *matHeaderCellDef> Image </th>
         <td mat-cell *matCellDef="let element"> {{element.image}} </td>
-      </ng-container>
-  
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-      </ng-container>
-  
-      <ng-container matColumnDef="category">
-        <th mat-header-cell *matHeaderCellDef> Category </th>
-        <td mat-cell *matCellDef="let element"> {{element.category}} </td>
-      </ng-container>
-  
-      <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef> Price </th>
-        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="model">
-        <th mat-header-cell *matHeaderCellDef> Model </th>
-        <td mat-cell *matCellDef="let element"> {{element.model}} </td>
       </ng-container>
 
       <ng-container matColumnDef="createdAt">
@@ -58,10 +36,11 @@
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef> Action </th>
         <td mat-cell *matCellDef="let element">
-          <mat-icon class="edit" [routerLink]="'./edit-product'">edit</mat-icon>
+          <mat-icon class="edit" (click)='edit()'>edit</mat-icon>
           <mat-icon class="delete" (click)="delete()">delete</mat-icon>
         </td>
       </ng-container>
+
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

@@ -29,6 +29,7 @@ export class ProductsComponent implements AfterViewInit, OnInit {
     'image',
     'name',
     'category',
+    'model',
     'price',
     'createdAt',
     'updatedAt',
@@ -69,6 +70,7 @@ export interface PeriodicElement {
   price: number;
   createdAt: string;
   updatedAt: string;
+  model:string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -79,6 +81,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -87,6 +90,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -95,6 +99,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -103,6 +108,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -111,6 +117,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -119,6 +126,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -127,6 +135,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -135,6 +144,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -143,6 +153,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -151,6 +162,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -159,6 +171,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -167,6 +180,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -175,6 +189,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -183,6 +198,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -191,6 +207,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -199,6 +216,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -207,6 +225,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -215,6 +234,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -223,6 +243,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -231,6 +252,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
   {
     name: 'coffee',
@@ -239,5 +261,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
     price: 4000,
     createdAt: 'hello',
     updatedAt: 'hi',
+    model:"S"
   },
 ];

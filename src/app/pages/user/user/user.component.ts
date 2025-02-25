@@ -22,7 +22,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './user.component.css',
 })
 export class UserComponent implements OnInit,AfterViewInit {
-  displayedColumns: string[] = ['fullName', 'email', 'contact', 'role'];
+  displayedColumns: string[] = ['fullName', 'email', 'contact','address', 'role'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -50,6 +50,7 @@ export interface PeriodicElement {
   email: string;
   contact: number;
   role: string;
+  address:string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -58,155 +59,181 @@ const ELEMENT_DATA: PeriodicElement[] = [
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
   {
     fullName: 'admin',
     email: 'admin@gmail.com',
     contact: 94555595959,
     role: 'Admin',
+    address:"Yangon"
   },
 ];
